@@ -1,5 +1,9 @@
 # Omadora default Alacritty config. Managed by chezmoi; run `omadora-setup` to
-# re-apply it. Themes are added by the Omadora theme system.
+# re-apply it. Colors come from Noctalia, which renders the file imported below
+# whenever the theme changes (switch with `omadora-theme-set`).
+
+[general]
+import = ["~/.config/alacritty/themes/noctalia.toml"]
 
 [window]
 padding = { x = 8, y = 8 }

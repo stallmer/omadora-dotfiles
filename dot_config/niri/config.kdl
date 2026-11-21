@@ -1,0 +1,5 @@
+// Omadora user config for Niri. The image's defaults in /etc/niri/config.kdl keep
+// updating for everyone; Noctalia's theme colors layer on top. Add your own
+// settings below the includes to override either.
+include "/etc/niri/config.kdl"
+include "~/.config/niri/noctalia.kdl"

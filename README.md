@@ -13,6 +13,11 @@ Never commit secrets here.
 ## Layout
 
 - `dot_config/alacritty/alacritty.toml` becomes `~/.config/alacritty/alacritty.toml`.
+- `dot_config/alacritty/themes/create_noctalia.toml` is a placeholder that Noctalia
+  later overwrites with the active theme (a `create_` file is written once and
+  never overwritten by chezmoi).
+- `dot_config/niri/config.kdl` includes the image's `/etc/niri/config.kdl` and
+  Noctalia's `~/.config/niri/noctalia.kdl` (also a `create_` placeholder).
 
 System defaults for Niri and Noctalia live in the image (`/etc/niri`,
 `/etc/xdg/noctalia`), not here, so image updates reach every user. Put only

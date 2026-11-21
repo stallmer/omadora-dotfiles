@@ -1,0 +1,2 @@
+// Placeholder so the include in config.kdl never points at a missing file.
+// Noctalia overwrites this file with the active theme's colors.
