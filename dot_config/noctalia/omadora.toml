@@ -1,0 +1,5 @@
+# Pulls in Omadora's Noctalia defaults from the image. Noctalia releases before
+# 5.6.0 (Fedora 44 ships 5.4.1) do not read /etc/xdg/noctalia on their own.
+# Settings you put in your own files here, or change in Noctalia, override these.
+[include]
+files = ["/etc/xdg/noctalia/10-omadora.toml"]

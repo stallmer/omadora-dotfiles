@@ -16,6 +16,10 @@ Never commit secrets here.
 - `dot_config/alacritty/themes/create_noctalia.toml` is a placeholder that Noctalia
   later overwrites with the active theme (a `create_` file is written once and
   never overwritten by chezmoi).
+- `dot_config/noctalia/omadora.toml` becomes `~/.config/noctalia/omadora.toml` and
+  includes the image's `/etc/xdg/noctalia/10-omadora.toml` (the idle timeouts and
+  the default theme). Noctalia 5.6.0 or later reads that file on its own; Fedora
+  44 ships 5.4.1, which does not, so this include is what loads it.
 - `dot_config/niri/config.kdl` includes the image's `/etc/niri/config.kdl` and
   Noctalia's `~/.config/niri/noctalia.kdl` (also a `create_` placeholder).
 
