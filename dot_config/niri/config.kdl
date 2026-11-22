@@ -12,6 +12,13 @@ window-rule {
 }
 
 input {
+    keyboard {
+        xkb {
+            // Make Caps Lock an additional Ctrl key.
+            options "ctrl:nocaps"
+        }
+    }
+
     touchpad {
         // This section replaces the system touchpad section entirely (it isn't
         // merged), so leaving out "tap" disables tap-to-click.
