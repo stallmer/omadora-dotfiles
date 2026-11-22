@@ -10,3 +10,13 @@ window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }
+
+input {
+    touchpad {
+        // This section replaces the system touchpad section entirely (it isn't
+        // merged), so leaving out "tap" disables tap-to-click.
+        natural-scroll
+        // Two-finger click = right click, three-finger click = middle click.
+        click-method "clickfinger"
+    }
+}
